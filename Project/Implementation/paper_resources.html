@@ -1,0 +1,73 @@
+<!-- paper_resources.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Collaborative Learning</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="upload-button">Upload</button>
+        <div id="paper-resources" class="container">
+                <h2>Paper Resources</h2>
+                <div class="resource-grid"> 
+                <div class="resource-item">
+                    <img src="2.jpg" alt="Resource 1">
+                    <button class="order-button" onclick="addToCart('Database', '2.jpg')">Order</button>
+                </div>
+                <div class="resource-item">
+                    <img src="3.jpg" alt="Resource 2">
+                    <button class="order-button" onclick="addToCart('The Palestinian cause', '3.jpg')">Order</button>
+                </div>
+                <div class="resource-item">
+                    <img src="4.jpg" alt="Resource 3">
+                    <button class="order-button" onclick="addToCart('physics 102', '4.jpg')">Order</button>     
+                
+            </div>
+            <div class="resource-item">
+                <img src="5.jpg" alt="Resource 4">
+                <button class="order-button" onclick="addToCart('circuit analysis', '5.jpg')">Order</button>        
+                </div>
+
+            
+            <div class="resource-item">
+                <img src="6.jpg" alt="Resource 5">
+                <button class="order-button" onclick="addToCart('chymistery summary', '6.jpg')">Order</button>          
+              </div>
+
+            
+            <div class="resource-item">
+                <img src="7.jpg" alt="Resource 6">
+                <button class="order-button" onclick="addToCart('algorithm solids', '7.jpg')">Order</button>         
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Collaborative Learning. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
