@@ -1,0 +1,78 @@
+
+
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Collaborative Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Collaborative Learning</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                    
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <button class="btn" id="clear-cart-button">Clear Cart</button>
+                <button class="btn" id="confirm-order-button">Confirm Order</button>
+
+                <div id="order-options" style="display: none;">
+                    <button class="btn" onclick="showDeliveryOption()">Send them via a delivery company</button>
+                    <button class="btn" onclick="showPickupOption()">Receive them from somewhere</button>
+                </div>
+
+                <div id="delivery-option" style="display: none;">
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <button class="btn" onclick="confirmDelivery()">Done</button>
+                </div>
+
+                <div id="pickup-option" style="display: none;">
+                    <p>Your application will be submitted to University Security at 1:00 PM two days later. is that OK with you?</p>
+                    <button class="btn" onclick="confirmPickup(true)">Yes</button>
+                    <button class="btn" onclick="confirmPickup(false)">No</button>
+                </div>
+
+                <div id="pickup-date-selector" style="display: none;">
+                    <label for="pickup-date">Select a convenient date and time:</label>
+                    <input type="datetime-local" id="pickup-date" name="pickup-date" required>
+                    <button class="btn" onclick="confirmCustomPickup()">Confirm</button>
+                </div>
+
+                <div id="confirmation-message" style="display: none;">
+                    <p id="confirmation-text"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Collaborative Learning. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
